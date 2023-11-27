@@ -1,24 +1,22 @@
 // CSVデータを1行目をキー、2行目以降をバリューとして連想配列に格納する関数
 export function parseCSVData(csvData) {
   const lines = csvData.split("\n");
-  // ヘッダ行と問題データの初期化
-  var header = lines[0].split(",");
-  var questions = [];
+  const header = lines[0].split(",");
+  const questions = lines.slice(1).map((line) => {
+    const data = line.split(",");
+    return header.reduce((obj, key, index) => {
+      obj[key.trim()] = data[index] ? data[index].trim() : "";
+      return obj;
+    }, {});
+  });
 
-  // 各行のデータを処理
-  for (var i = 1; i < lines.length; i++) {
-    var data = lines[i].split(",");
-    var question = {};
+  return { questions };
+}
 
-    for (var j = 0; j < header.length; j++) {
-      question[header[j]] = data[j];
-    }
-
-    questions.push(question);
-  }
-
-  // 問題データを変数に格納
-  var quizData = {questions};
-  console.log(quizData);
-  return quizData;
+export function LevelCSVData(quizData, selectedLevel) {
+  const questions = quizData.questions.filter(
+    (question) => question.level === selectedLevel
+  );
+  console.log(questions);
+  return { questions };
 }

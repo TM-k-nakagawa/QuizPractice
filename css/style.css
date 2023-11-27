@@ -17,3 +17,10 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

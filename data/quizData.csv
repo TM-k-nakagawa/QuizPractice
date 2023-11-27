@@ -1,0 +1,10 @@
+Question,Choice1,Choice2,Choice3,Choice4,CorrectAnswer,level,image,eximage
+この役の名前は何ですか？,ストレートフラッシュ,ロイヤルストレートフラッシュ,フラッシュ,ストレート,1,簡単,image01.jpg
+この役の名前は何ですか？,ワンペア,ツーペア,スリーカード,フルハウス,4,簡単,image02.jpg
+テキサスホールデムでは、最初に配られるカードは何枚？,1枚,2枚,3枚,4枚,2,普通
+「スモールブラインド」と「ビッグブラインド」とは何？, ゲームの種類,プレイヤーの位置, 強制的な賭け, 特別なカードの組み合わせ,3,普通
+PFAIをしました。勝率が高いのはどちらか？,AKo,22,,,2,普通,image07.jpg,image12.png
+リバーまでめくられた際、一番勝率が低いのはどのハンドか？,78o,54s,77,AQs,3,難しい,image03.jpg,image11.png
+4WayのPFAIをしました。一番勝率が低いのはどのハンドか？,AKo,QTo,KK,35s,2,難しい,image04.jpg,image08.png
+4WayのPFAIをしました。一番勝率が高いのはどのハンドか？,ATo,44,56s,32s,1,難しい,image05.jpg,image09.png
+リバーまでめくられた際、一番勝率が低いのはどのハンドか？,T8o,A9o,74o,AKs,2,難しい,image06.jpg,image10.png
